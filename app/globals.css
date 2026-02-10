@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #0a0f1a;
+}
+
+body {
+  color: #fff;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  position: relative;
+}
+
+.background-layer {
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  background-image: url(/images/background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  inset: 0;
+  filter: blur(2px);
+}
+
+.content-card {
+  z-index: 1;
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  backdrop-filter: blur(12px) saturate(1.2);
+  background: rgba(10, 10, 10, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 700px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.experience-list li,
+.project-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.experience-list li::before {
+  content: "\25C6";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  font-size: 0.6em;
+  top: 0.35em;
+}
+
+.project-list li::before {
+  content: "\25C6";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  font-size: 0.6em;
+  top: 0.35em;
+}
+
+.social-links {
+  gap: 0.75rem;
+  display: flex;
+}
+
+.social-links a {
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 0.875rem;
+}
+
+/* Typewriter */
+.typewriter {
+  display: inline-block;
+}
+
+.cursor {
+  margin-left: 2px;
+  animation: blink 1s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hover tooltip */
+.hover-text {
+  position: relative;
+  cursor: default;
+}
+
+.hover-text .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none;
+}
+
+.hover-text:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Project hover typewriter */
+.project-tech-typewriter {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+/* Link styling */
+.accent-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.accent-link:hover {
+  opacity: 0.7;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .content-card {
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .header h1 {
+    font-size: 1.1rem;
+  }
+}
