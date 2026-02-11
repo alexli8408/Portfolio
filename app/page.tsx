@@ -8,7 +8,7 @@ export default function Home() {
       <div className="content-card">
         {/* Header */}
         <div className="header">
-          <h1>alex-li.vercel.app</h1>
+          <h1>axli.me</h1>
           <div className="social-links">
             <a href="mailto:atli@uwaterloo.ca" aria-label="Email" title="Email">
               <Mail size={20} />
@@ -150,7 +150,7 @@ export default function Home() {
               , an Arduino Circadian Lighting System
             </li>
           </ul>
-        </div> 
+        </div>
 
         {/* Footer */}
         <div className="footer">&copy; 2026 Alex Li</div>
