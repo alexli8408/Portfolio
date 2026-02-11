@@ -82,7 +82,7 @@ export default function Home() {
               >
                 Software Developer
               </a>
-              {" "}@ UW Reality Labs
+              {" "}@ Waterloo Reality Labs
             </li>
             <li>
               Computer Architecture Research Intern @ CEcloud
@@ -117,7 +117,7 @@ export default function Home() {
               >
                 Data Structures Library
               </a>
-              , a C++ DSA Library
+              , a C++ Data Structures Library
             </li>
             <li>
               <a
@@ -139,7 +139,7 @@ export default function Home() {
               >
                 FPGA Arithmetic Logic Unit
               </a>
-              , a Verilog ALU
+              , a Verilog Arithmetic Logic Unit
             </li>
             <li>
               <a
@@ -150,7 +150,7 @@ export default function Home() {
               >
                 CircadiaSense
               </a>
-              , an Arduino Lighting System
+              , an Arduino Circadian Lighting System
             </li>
           </ul>
         </div>
