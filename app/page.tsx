@@ -147,7 +147,7 @@ export default function Home() {
               >
                 CircadiaSense
               </a>
-              , an Arduino Circadian Lighting System
+              , an Automated Circadian Lighting System
             </li>
           </ul>
         </div>
