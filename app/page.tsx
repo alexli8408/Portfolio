@@ -61,7 +61,7 @@ export default function Home() {
           <ul className="experience-list">
             <li>
               <a
-                href="https://github.com/alexli8408/GS-Onboarding"
+                href="https://github.com/alexli8408/UW-Orbital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -72,7 +72,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/alexli8408/UW-Reality-Labs"
+                href="https://github.com/alexli8408/Waterloo-Reality-Labs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -96,7 +96,7 @@ export default function Home() {
           <ul className="project-list">
             <li>
               <a
-                href="https://github.com/alexli8408"
+                href="https://github.com/alexli8408/TrueLight"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -107,7 +107,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/alexli8408"
+                href="https://github.com/alexli8408/Data-Structures-Library"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -118,7 +118,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/alexli8408"
+                href="https://github.com/alexli8408/Study-Planner"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -129,7 +129,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/alexli8408"
+                href="https://github.com/alexli8408/FPGA-Arithmetic-Logic-Unit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
@@ -140,7 +140,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://github.com/alexli8408"
+                href="https://github.com/alexli8408/CircadiaSense"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="accent-link bold"
