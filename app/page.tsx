@@ -40,10 +40,7 @@ export default function Home() {
         {/* Typewriter */}
         <div className="section">
           <p>
-            Alex{" "}
-            <span role="img" aria-label="heart">
-              ⚡💻
-            </span>{" "}
+            Alex Li |{" "}
             <Typewriter />
           </p>
         </div>
