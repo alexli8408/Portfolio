@@ -150,7 +150,7 @@ export default function Home() {
               , an Arduino Circadian Lighting System
             </li>
           </ul>
-        </div>
+        </div> 
 
         {/* Footer */}
         <div className="footer">&copy; 2026 Alex Li</div>
