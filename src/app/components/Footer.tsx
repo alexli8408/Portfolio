@@ -20,7 +20,7 @@ const links = [
   },
   {
     icon: FileText,
-    href: "/resume.pdf",
+    href: "/Resume.pdf",
     label: "Resume",
   },
 ];
@@ -36,14 +36,14 @@ export default function Footer() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-1.5 text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 transition-all duration-500"
+              className="group relative text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 transition-all duration-500"
               aria-label={label}
             >
               <Icon
                 size={18}
                 className="transition-transform duration-500 group-hover:scale-110"
               />
-              <span className="hidden md:inline text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="hidden md:block absolute left-1/2 -translate-x-1/2 top-full mt-1 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {label}
               </span>
             </a>
