@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +9,106 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #f5f5f4;
+  --foreground: #171717;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ededed;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: #fef08a;
+}
+
+.dark ::selection {
+  background-color: #854d0e;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #292524;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #44403c;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #57534e;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d6d3d1 #f5f5f4;
+}
+
+.dark * {
+  scrollbar-color: #44403c #292524;
+}
+
+/* Sweep underline animation for links */
+@keyframes sweep {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+/* Command palette slide-down */
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 150ms ease-out;
 }

@@ -1,65 +1,106 @@
-import Image from "next/image";
+import { GalleryHorizontalEnd } from "lucide-react";
+import BulletItem from "./components/BulletItem";
+import SubItem from "./components/SubItem";
+import AnimatedLink from "./components/AnimatedLink";
+import Signature from "./components/Signature";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="flex flex-col gap-2">
+      {/* Hero / Current Status */}
+      <ul className="flex flex-col gap-2">
+        <BulletItem>
+          Computer Engineering{" "}
+          <AnimatedLink href="https://uwaterloo.ca">UWaterloo</AnimatedLink>
+        </BulletItem>
+        <BulletItem>
+          Software Developer{" "}
+          <AnimatedLink href="https://www.uworbital.com">
+            UW Orbital
+          </AnimatedLink>
+        </BulletItem>
+      </ul>
+
+      {/* What I've been building */}
+      <ul className="flex flex-col gap-2 mt-2">
+        <BulletItem>
+          <em className="font-medium text-stone-500 dark:text-stone-400">
+            what i&apos;ve been building:
+          </em>
+        </BulletItem>
+        <ul className="flex flex-col gap-2 pl-5">
+          <SubItem>
+            building ground station software for{" "}
+            <AnimatedLink href="https://www.uworbital.com">
+              UW Orbital
+            </AnimatedLink>
+            &apos;s satellite platform
+          </SubItem>
+          <SubItem>
+            researched virtual memory management across OS architectures @{" "}
+            <AnimatedLink href="https://cecloud.com">CEcloud</AnimatedLink>
+          </SubItem>
+          <SubItem>
+            overhauled UI styling and CSS performance for 500+ users @{" "}
+            <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
+              Tsinghua University
+            </AnimatedLink>
+          </SubItem>
+        </ul>
+      </ul>
+
+      {/* CTA Button */}
+      <a
+        href="#projects"
+        className="flex items-center justify-center gap-2 mt-6 py-4 px-6 rounded-lg border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-600 dark:text-stone-400 font-extralight transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:border-stone-400 dark:hover:border-stone-600"
+      >
+        see what i&apos;ve built
+        <GalleryHorizontalEnd size={16} />
+      </a>
+
+      {/* Projects Section */}
+      <ul id="projects" className="flex flex-col gap-2 mt-8 scroll-mt-20">
+        <BulletItem>
+          <em className="font-medium text-stone-500 dark:text-stone-400">
+            what i&apos;ve built:
+          </em>
+        </BulletItem>
+        <ul className="flex flex-col gap-2 pl-5">
+          <SubItem>
+            <AnimatedLink href="https://github.com/alexli8408/linkmark">
+              Linkmark
+            </AnimatedLink>{" "}
+            &mdash; full-stack bookmark manager with Chrome extension
+          </SubItem>
+          <SubItem>
+            <AnimatedLink href="https://github.com/alexli8408/palette-ai">
+              PaletteAI
+            </AnimatedLink>{" "}
+            &mdash; AI color palette generator with Azure OpenAI
+          </SubItem>
+          <SubItem>
+            <AnimatedLink href="https://github.com/alexli8408/co-whiteboard">
+              CoWhiteboard
+            </AnimatedLink>{" "}
+            &mdash; real-time collaborative whiteboard
+          </SubItem>
+          <SubItem>
+            <AnimatedLink href="https://github.com/alexli8408/truelight">
+              TrueLight
+            </AnimatedLink>{" "}
+            &mdash; dashcam accessibility app for colorblind users
+          </SubItem>
+          <SubItem>
+            <AnimatedLink href="https://github.com/alexli8408/data-structures-library">
+              Data Structures Library
+            </AnimatedLink>{" "}
+            &mdash; C++ library outperforming STL by 11%
+          </SubItem>
+        </ul>
+      </ul>
+
+      {/* Signature */}
+      <Signature />
     </div>
   );
 }
