@@ -1,8 +1,13 @@
 "use client";
 
-import { Linkedin, Github, Mail, Code } from "lucide-react";
+import { Linkedin, Github, Mail, FileText } from "lucide-react";
 
 const links = [
+  {
+    icon: Mail,
+    href: "mailto:atli@uwaterloo.ca",
+    label: "Email",
+  },
   {
     icon: Linkedin,
     href: "https://linkedin.com/in/alex-li-619870294",
@@ -14,14 +19,9 @@ const links = [
     label: "GitHub",
   },
   {
-    icon: Mail,
-    href: "mailto:atli@uwaterloo.ca",
-    label: "Email",
-  },
-  {
-    icon: Code,
-    href: "https://github.com/alexli8408/portfolio",
-    label: "Source",
+    icon: FileText,
+    href: "/resume.pdf",
+    label: "Resume",
   },
 ];
 

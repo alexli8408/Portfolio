@@ -1,8 +1,6 @@
-import { GalleryHorizontalEnd } from "lucide-react";
 import BulletItem from "./components/BulletItem";
 import SubItem from "./components/SubItem";
 import AnimatedLink from "./components/AnimatedLink";
-import Signature from "./components/Signature";
 
 export default function Home() {
   return (
@@ -49,17 +47,8 @@ export default function Home() {
         </ul>
       </ul>
 
-      {/* CTA Button */}
-      <a
-        href="#projects"
-        className="flex items-center justify-center gap-2 mt-6 py-4 px-6 rounded-lg border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-950 text-stone-600 dark:text-stone-400 font-extralight transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm hover:border-stone-400 dark:hover:border-stone-600"
-      >
-        see what i&apos;ve built
-        <GalleryHorizontalEnd size={16} />
-      </a>
-
       {/* Projects Section */}
-      <ul id="projects" className="flex flex-col gap-2 mt-8 scroll-mt-20">
+      <ul id="projects" className="flex flex-col gap-2 mt-4">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             what i&apos;ve built:
@@ -98,9 +87,6 @@ export default function Home() {
           </SubItem>
         </ul>
       </ul>
-
-      {/* Signature */}
-      <Signature />
     </div>
   );
 }
