@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <main className="flex justify-center min-h-screen bg-stone-100 dark:bg-black bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px]">
-            <div className="flex flex-col gap-4 w-full md:max-w-[500px] mx-6 md:mx-20 mt-8 md:mt-[60px] mb-8 text-stone-500 dark:text-stone-400 font-extralight">
+            <div className="flex flex-col gap-4 w-full md:max-w-[500px] mx-6 md:mx-20 mt-8 md:mt-[60px] mb-8 text-neutral-500 dark:text-neutral-400 font-extralight">
               <Header />
               {children}
               <Footer />
