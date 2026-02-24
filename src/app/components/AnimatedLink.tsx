@@ -18,21 +18,18 @@ export default function AnimatedLink({
   const isExternal = external ?? href.startsWith("http");
 
   const linkClasses = `
-    relative inline-block font-medium text-stone-800 dark:text-stone-200
+    animated-link relative inline-flex items-center font-medium
+    text-stone-800 dark:text-stone-200
+    after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full
+    after:bg-stone-300 dark:after:bg-stone-600 after:z-[1]
+    before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-full
+    before:bg-stone-800 dark:before:bg-stone-300 before:opacity-0 before:z-[2]
+    hover:before:opacity-100
+    hover:text-stone-900 dark:hover:text-stone-100
     ${className}
   `;
 
-  const content = (
-    <>
-      <span className="relative z-10">{children}</span>
-      {/* Static underline */}
-      <span className="absolute bottom-0 left-0 h-[1px] w-full bg-stone-300 dark:bg-stone-600" />
-      {/* Animated sweep underline */}
-      <span className="absolute bottom-0 left-0 h-[1px] w-full overflow-hidden">
-        <span className="sweep-line block h-full w-full bg-white -translate-x-full" />
-      </span>
-    </>
-  );
+  const content = <>{children}</>;
 
   if (isExternal) {
     return (

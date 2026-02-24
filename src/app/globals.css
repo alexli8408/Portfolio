@@ -78,19 +78,26 @@ body {
 }
 
 /* Sweep underline animation for links */
-a:hover .sweep-line {
-  animation: sweep 1.2s ease-in-out infinite;
+.animated-link:hover::before {
+  animation: sweep 2s ease-in-out infinite;
 }
 
 @keyframes sweep {
   0% {
-    transform: translateX(-100%);
+    transform: scaleX(0);
+    transform-origin: left;
   }
-  40% {
-    transform: translateX(100%);
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
   }
   100% {
-    transform: translateX(100%);
+    transform: scaleX(0);
+    transform-origin: right;
   }
 }
 
