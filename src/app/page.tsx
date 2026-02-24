@@ -15,7 +15,10 @@ export default function Home() {
         </BulletItem>
         <ul className="flex flex-col gap-2 pl-5">
           <SubItem>
-            Computer Engineering @ University of Waterloo
+            Computer Engineering @{" "}
+            <AnimatedLink href="https://uwaterloo.ca">
+              University of Waterloo
+            </AnimatedLink>
           </SubItem>
         </ul>
       </ul>
@@ -32,13 +35,22 @@ export default function Home() {
             <AnimatedLink href="https://github.com/alexli8408/UW-Orbital">
               Software Developer
             </AnimatedLink>{" "}
-            @ UW Orbital
+            @{" "}
+            <AnimatedLink href="https://www.uworbital.com">
+              UW Orbital
+            </AnimatedLink>
           </SubItem>
           <SubItem>
-            Computer Architecture Research Intern @ CEcloud
+            Computer Architecture Research Intern @{" "}
+            <AnimatedLink href="https://cecloud.com">
+              CEcloud
+            </AnimatedLink>
           </SubItem>
           <SubItem>
-            Full Stack Development Intern @ Tsinghua University
+            Full Stack Development Intern @{" "}
+            <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
+              Tsinghua University
+            </AnimatedLink>
           </SubItem>
         </ul>
       </ul>

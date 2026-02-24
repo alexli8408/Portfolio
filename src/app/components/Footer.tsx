@@ -28,7 +28,7 @@ const links = [
 export default function Footer() {
   return (
     <footer className="mt-8 pt-6 border-t border-stone-200 dark:border-stone-800">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3">
         <div className="flex items-center gap-3">
           {links.map(({ icon: Icon, href, label }) => (
             <a
@@ -49,7 +49,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <span className="text-xs text-stone-400 dark:text-stone-600">
+        <span className="text-xs text-stone-500 dark:text-stone-400">
           2026 &copy; Alex Li
         </span>
       </div>
