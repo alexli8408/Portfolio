@@ -5,15 +5,21 @@ import AnimatedLink from "./components/AnimatedLink";
 export default function Home() {
   return (
     <div className="flex flex-col gap-2">
-      {/* Hero / Current Status */}
+      {/* Education */}
       <ul className="flex flex-col gap-2">
         <BulletItem>
-          Computer Engineering @ {" "}
-          <AnimatedLink href="https://uwaterloo.ca">University of Waterloo</AnimatedLink>
+          <em className="font-medium text-stone-500 dark:text-stone-400">
+            Education
+          </em>
         </BulletItem>
+        <ul className="flex flex-col gap-2 pl-5">
+          <SubItem>
+            Computer Engineering @ University of Waterloo
+          </SubItem>
+        </ul>
       </ul>
 
-      {/* What I've been building */}
+      {/* Experiences */}
       <ul className="flex flex-col gap-2 mt-2">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
@@ -22,20 +28,16 @@ export default function Home() {
         </BulletItem>
         <ul className="flex flex-col gap-2 pl-5">
           <SubItem>
-            Software Developer @ {" "}
-            <AnimatedLink href="https://www.uworbital.com">
-              UW Orbital
-            </AnimatedLink>
+            <AnimatedLink href="https://github.com/alexli8408/UW-Orbital">
+              Software Developer
+            </AnimatedLink>{" "}
+            @ UW Orbital
           </SubItem>
           <SubItem>
-            Computer Architecture Research Intern @{" "}
-            <AnimatedLink href="https://cecloud.com">CEcloud</AnimatedLink>
+            Computer Architecture Research Intern @ CEcloud
           </SubItem>
           <SubItem>
-            Full Stack Development Intern @{" "}
-            <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
-              Tsinghua University
-            </AnimatedLink>
+            Full Stack Development Intern @ Tsinghua University
           </SubItem>
         </ul>
       </ul>
