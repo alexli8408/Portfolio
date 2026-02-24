@@ -1,7 +1,6 @@
 import BulletItem from "./components/BulletItem";
 import SubItem from "./components/SubItem";
 import AnimatedLink from "./components/AnimatedLink";
-import Signature from "./components/Signature";
 
 export default function Home() {
   return (
@@ -95,10 +94,6 @@ export default function Home() {
           </SubItem>
         </ul>
       </ul>
-
-      <div className="flex flex-col sm:flex-row items-center justify-end mt-8">
-        <Signature />
-      </div>
     </div>
   );
 }
