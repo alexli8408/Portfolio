@@ -27,32 +27,25 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="mt-8 pt-6 border-t border-stone-200 dark:border-stone-800">
-      <div className="flex flex-col gap-3">
-        <div className="flex items-center gap-3">
-          {links.map(({ icon: Icon, href, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 transition-all duration-500"
-              aria-label={label}
-            >
-              <Icon
-                size={18}
-                className="transition-transform duration-500 group-hover:scale-110"
-              />
-              <span className="hidden md:block absolute left-1/2 -translate-x-1/2 top-full mt-1 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-                {label}
-              </span>
-            </a>
-          ))}
-        </div>
-        <span className="text-xs text-stone-500 dark:text-stone-400">
-          2026 &copy; Alex Li
-        </span>
+    <footer className="flex flex-col gap-4 text-sm text-stone-500 dark:text-stone-400">
+      <hr className="border-b border-neutral-200 dark:border-neutral-800" />
+      <div className="flex flex-wrap gap-4">
+        {links.map(({ icon: Icon, href, label }) => (
+          <a
+            key={label}
+            href={href}
+            className="group flex items-center hover:text-neutral-800 dark:hover:text-neutral-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon className="w-5 h-5 hover:scale-110 md:hover:scale-110 transition-transform duration-500 ease-out" />
+            <span className="hidden md:inline-block md:w-0 md:overflow-hidden md:group-hover:w-auto md:group-hover:ml-2 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 ease-out">
+              {label}
+            </span>
+          </a>
+        ))}
       </div>
+      <p>2026 &copy; Alex Li</p>
     </footer>
   );
 }

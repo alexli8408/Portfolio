@@ -19,7 +19,8 @@ export default function AnimatedLink({
 
   const linkClasses = `
     animated-link relative inline-flex items-center font-medium
-    text-stone-800 dark:text-stone-200
+    text-stone-700 dark:text-stone-300
+    transition-all duration-300
     after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full
     after:bg-stone-300 dark:after:bg-stone-600 after:z-[1]
     before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-full

@@ -4,15 +4,15 @@ import AnimatedLink from "./components/AnimatedLink";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1 text-base">
       {/* Education */}
-      <ul className="group flex flex-col gap-2 hover:translate-x-1 transition-transform duration-200">
+      <ul className="group grid gap-1 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Education
           </em>
         </BulletItem>
-        <ul className="flex flex-col gap-2 pl-5">
+        <ul className="grid gap-1 pl-4">
           <SubItem>
             Computer Engineering @{" "}
             <AnimatedLink href="https://uwaterloo.ca">
@@ -23,13 +23,13 @@ export default function Home() {
       </ul>
 
       {/* Experiences */}
-      <ul className="group flex flex-col gap-2 mt-2 hover:translate-x-1 transition-transform duration-200">
+      <ul className="group grid gap-1 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Experiences
           </em>
         </BulletItem>
-        <ul className="flex flex-col gap-2 pl-5">
+        <ul className="grid gap-1 pl-4">
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/UW-Orbital">
               Software Developer
@@ -55,13 +55,13 @@ export default function Home() {
       </ul>
 
       {/* Projects Section */}
-      <ul id="projects" className="group flex flex-col gap-2 mt-4 hover:translate-x-1 transition-transform duration-200">
+      <ul id="projects" className="group grid gap-1 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Projects
           </em>
         </BulletItem>
-        <ul className="flex flex-col gap-2 pl-5">
+        <ul className="grid gap-1 pl-4">
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/linkmark">
               Linkmark

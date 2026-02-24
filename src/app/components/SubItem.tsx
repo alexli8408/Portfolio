@@ -4,8 +4,8 @@ interface SubItemProps {
 
 export default function SubItem({ children }: SubItemProps) {
   return (
-    <li className="relative flex items-start gap-2 pl-2 ml-2">
-      <span className="text-stone-400 dark:text-stone-500 select-none shrink-0">
+    <li className="relative flex items-start gap-4">
+      <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500 select-none">
         {"↳"}
       </span>
       <span className="text-stone-600 dark:text-stone-400">{children}</span>
