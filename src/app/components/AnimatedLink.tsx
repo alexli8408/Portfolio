@@ -28,15 +28,15 @@ export default function AnimatedLink({
       {/* Static underline */}
       <span className="absolute bottom-0 left-0 h-[1px] w-full bg-stone-300 dark:bg-stone-600" />
       {/* Animated sweep underline */}
-      <span className="animated-underline absolute bottom-0 left-0 h-[1px] w-full bg-stone-800 dark:bg-stone-300 scale-x-0" />
+      <span className="absolute bottom-0 left-0 h-[1px] w-full overflow-hidden">
+        <span className="sweep-line block h-full w-full bg-white" />
+      </span>
       <style jsx>{`
-        .animated-underline {
-          transform: scaleX(0);
-          transform-origin: left;
+        .sweep-line {
+          transform: translateX(-100%);
         }
-        *:hover > .animated-underline,
-        *:hover > span > .animated-underline {
-          animation: sweep 0.6s ease-in-out;
+        *:hover > span > .sweep-line {
+          animation: sweep 1.2s ease-in-out infinite;
         }
       `}</style>
     </>
