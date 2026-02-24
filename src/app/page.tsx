@@ -1,13 +1,12 @@
 import BulletItem from "./components/BulletItem";
 import SubItem from "./components/SubItem";
 import AnimatedLink from "./components/AnimatedLink";
-import Signature from "./components/Signature";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-2">
       {/* Education */}
-      <ul className="flex flex-col gap-2">
+      <ul className="group flex flex-col gap-2 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Education
@@ -24,7 +23,7 @@ export default function Home() {
       </ul>
 
       {/* Experiences */}
-      <ul className="flex flex-col gap-2 mt-2">
+      <ul className="group flex flex-col gap-2 mt-2 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Experiences
@@ -56,7 +55,7 @@ export default function Home() {
       </ul>
 
       {/* Projects Section */}
-      <ul id="projects" className="flex flex-col gap-2 mt-4">
+      <ul id="projects" className="group flex flex-col gap-2 mt-4 hover:translate-x-1 transition-transform duration-200">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Projects
@@ -96,8 +95,6 @@ export default function Home() {
         </ul>
       </ul>
 
-      {/* Signature */}
-      <Signature />
     </div>
   );
 }
