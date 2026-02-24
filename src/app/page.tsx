@@ -61,7 +61,7 @@ export default function Home() {
           <SubItem>
             Full Stack Development Intern{" "}
             <span className="inline-flex items-baseline gap-1">
-              <Image src={TsinghuaLogo} alt="Tsinghua" width={14} height={14} className="object-contain relative top-[2px]" />
+              <Image src={TsinghuaLogo} alt="Tsinghua" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
               <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
                 Tsinghua University
               </AnimatedLink>
