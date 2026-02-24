@@ -29,16 +29,8 @@ export default function AnimatedLink({
       <span className="absolute bottom-0 left-0 h-[1px] w-full bg-stone-300 dark:bg-stone-600" />
       {/* Animated sweep underline */}
       <span className="absolute bottom-0 left-0 h-[1px] w-full overflow-hidden">
-        <span className="sweep-line block h-full w-full bg-white" />
+        <span className="sweep-line block h-full w-full bg-white -translate-x-full" />
       </span>
-      <style jsx>{`
-        .sweep-line {
-          transform: translateX(-100%);
-        }
-        *:hover > span > .sweep-line {
-          animation: sweep 1.2s ease-in-out infinite;
-        }
-      `}</style>
     </>
   );
 

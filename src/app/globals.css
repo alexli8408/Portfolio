@@ -78,6 +78,10 @@ body {
 }
 
 /* Sweep underline animation for links */
+a:hover .sweep-line {
+  animation: sweep 1.2s ease-in-out infinite;
+}
+
 @keyframes sweep {
   0% {
     transform: translateX(-100%);
