@@ -45,7 +45,6 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p>2026 &copy; Alex Li</p>
     </footer>
   );
 }
