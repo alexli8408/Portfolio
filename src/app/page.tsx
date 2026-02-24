@@ -8,14 +8,8 @@ export default function Home() {
       {/* Hero / Current Status */}
       <ul className="flex flex-col gap-2">
         <BulletItem>
-          Computer Engineering{" "}
-          <AnimatedLink href="https://uwaterloo.ca">UWaterloo</AnimatedLink>
-        </BulletItem>
-        <BulletItem>
-          Software Developer{" "}
-          <AnimatedLink href="https://www.uworbital.com">
-            UW Orbital
-          </AnimatedLink>
+          Computer Engineering @ {" "}
+          <AnimatedLink href="https://uwaterloo.ca">University of Waterloo</AnimatedLink>
         </BulletItem>
       </ul>
 
@@ -23,23 +17,22 @@ export default function Home() {
       <ul className="flex flex-col gap-2 mt-2">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
-            what i&apos;ve been building:
+            Experiences
           </em>
         </BulletItem>
         <ul className="flex flex-col gap-2 pl-5">
           <SubItem>
-            building ground station software for{" "}
+            Software Developer @ {" "}
             <AnimatedLink href="https://www.uworbital.com">
               UW Orbital
             </AnimatedLink>
-            &apos;s satellite platform
           </SubItem>
           <SubItem>
-            researched virtual memory management across OS architectures @{" "}
+            Computer Architecture Research Intern @{" "}
             <AnimatedLink href="https://cecloud.com">CEcloud</AnimatedLink>
           </SubItem>
           <SubItem>
-            overhauled UI styling and CSS performance for 500+ users @{" "}
+            Full Stack Development Intern @{" "}
             <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
               Tsinghua University
             </AnimatedLink>
@@ -51,7 +44,7 @@ export default function Home() {
       <ul id="projects" className="flex flex-col gap-2 mt-4">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
-            what i&apos;ve built:
+            Projects
           </em>
         </BulletItem>
         <ul className="flex flex-col gap-2 pl-5">
@@ -59,31 +52,31 @@ export default function Home() {
             <AnimatedLink href="https://github.com/alexli8408/linkmark">
               Linkmark
             </AnimatedLink>{" "}
-            &mdash; full-stack bookmark manager with Chrome extension
+            &mdash; Full Stack Cloud Bookmark Manager
           </SubItem>
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/palette-ai">
               PaletteAI
             </AnimatedLink>{" "}
-            &mdash; AI color palette generator with Azure OpenAI
+            &mdash; Full Stack AI Palette Generator
           </SubItem>
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/co-whiteboard">
               CoWhiteboard
             </AnimatedLink>{" "}
-            &mdash; real-time collaborative whiteboard
+            &mdash; Real-Time Collaborative Whiteboard
           </SubItem>
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/truelight">
               TrueLight
             </AnimatedLink>{" "}
-            &mdash; dashcam accessibility app for colorblind users
+            &mdash; React Native Dashcam App
           </SubItem>
           <SubItem>
             <AnimatedLink href="https://github.com/alexli8408/data-structures-library">
               Data Structures Library
             </AnimatedLink>{" "}
-            &mdash; C++ library outperforming STL by 11%
+            &mdash; C++ Data Structures Library
           </SubItem>
         </ul>
       </ul>
