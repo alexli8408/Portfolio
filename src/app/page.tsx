@@ -1,6 +1,11 @@
+import Image from "next/image";
 import BulletItem from "./components/BulletItem";
 import SubItem from "./components/SubItem";
 import AnimatedLink from "./components/AnimatedLink";
+import UWaterlooLogo from "./components/icon/UWaterloo.png";
+import UWOrbitalLogo from "./components/icon/UWOrbital.png";
+import CEcloudLogo from "./components/icon/CEcloud.png";
+import TsinghuaLogo from "./components/icon/Tsinghua.png";
 
 export default function Home() {
   return (
@@ -14,10 +19,13 @@ export default function Home() {
         </BulletItem>
         <ul className="grid gap-1 pl-4">
           <SubItem>
-            Computer Engineering @{" "}
-            <AnimatedLink href="https://uwaterloo.ca">
-              University of Waterloo
-            </AnimatedLink>
+            Computer Engineering{" "}
+            <span className="inline-flex items-baseline gap-1">
+              <Image src={UWaterlooLogo} alt="UWaterloo" width={14} height={14} className="object-contain relative top-[2px]" />
+              <AnimatedLink href="https://uwaterloo.ca">
+                University of Waterloo
+              </AnimatedLink>
+            </span>
           </SubItem>
         </ul>
       </ul>
@@ -34,22 +42,30 @@ export default function Home() {
             <AnimatedLink href="https://github.com/alexli8408/UW-Orbital">
               Software Developer
             </AnimatedLink>{" "}
-            @{" "}
-            <AnimatedLink href="https://www.uworbital.com">
-              UW Orbital
-            </AnimatedLink>
+            <span className="inline-flex items-baseline gap-1">
+              <Image src={UWOrbitalLogo} alt="UW Orbital" width={14} height={14} className="object-contain relative top-[2px]" />
+              <AnimatedLink href="https://www.uworbital.com">
+                UW Orbital
+              </AnimatedLink>
+            </span>
           </SubItem>
           <SubItem>
-            Computer Architecture Research Intern @{" "}
-            <AnimatedLink href="https://cecloud.com">
-              CEcloud
-            </AnimatedLink>
+            Computer Architecture Research Intern{" "}
+            <span className="inline-flex items-baseline gap-1">
+              <Image src={CEcloudLogo} alt="CEcloud" width={14} height={14} className="object-contain relative top-[2px]" />
+              <AnimatedLink href="https://cecloud.com">
+                CEcloud
+              </AnimatedLink>
+            </span>
           </SubItem>
           <SubItem>
-            Full Stack Development Intern @{" "}
-            <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
-              Tsinghua University
-            </AnimatedLink>
+            Full Stack Development Intern{" "}
+            <span className="inline-flex items-baseline gap-1">
+              <Image src={TsinghuaLogo} alt="Tsinghua" width={14} height={14} className="object-contain relative top-[2px]" />
+              <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
+                Tsinghua University
+              </AnimatedLink>
+            </span>
           </SubItem>
         </ul>
       </ul>
