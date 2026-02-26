@@ -52,7 +52,7 @@ export default function Home() {
           <SubItem>
             Computer Architecture Research Intern{" "}
             <span className="inline-flex items-baseline gap-1">
-              <Image src={CEcloudLogo} alt="CEcloud" width={14} height={14} className="object-contain relative top-[2px]" />
+              <Image src={CEcloudLogo} alt="CEcloud" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
               <AnimatedLink href="https://cecloud.com">
                 CEcloud
               </AnimatedLink>
