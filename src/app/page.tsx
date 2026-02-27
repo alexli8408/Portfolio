@@ -20,10 +20,10 @@ export default function Home() {
         </BulletItem>
         <ul className="grid gap-1 pl-4">
           <SubItem>
-            Computer Engineering{" "}
-            <span className="inline-flex items-baseline gap-1">
+            Computer Engineering
+            <span className="inline-flex items-baseline gap-1 ml-2">
               <Image src={UWaterlooLogo} alt="UWaterloo" width={14} height={14} className="object-contain relative top-[2px]" />
-              <AnimatedLink href="https://uwaterloo.ca">
+              <AnimatedLink href="https://uwaterloo.ca" className="font-medium">
                 University of Waterloo
               </AnimatedLink>
             </span>
@@ -40,30 +40,30 @@ export default function Home() {
         </BulletItem>
         <ul className="grid gap-1 pl-4">
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/UW-Orbital">
+            <AnimatedLink href="https://github.com/alexli8408/UW-Orbital" className="font-medium">
               Software Developer
-            </AnimatedLink>{" "}
-            <span className="inline-flex items-baseline gap-1">
+            </AnimatedLink>
+            <span className="inline-flex items-baseline gap-1 ml-2">
               <Image src={UWOrbitalLogo} alt="UW Orbital" width={14} height={14} className="object-contain relative top-[2px]" />
-              <AnimatedLink href="https://www.uworbital.com">
+              <AnimatedLink href="https://www.uworbital.com" className="font-medium">
                 UW Orbital
               </AnimatedLink>
             </span>
           </SubItem>
           <SubItem>
-            Computer Architecture Research Intern{" "}
-            <span className="inline-flex items-baseline gap-1">
+            Computer Architecture Research Intern
+            <span className="inline-flex items-baseline gap-1 ml-2">
               <Image src={CEcloudLogo} alt="CEcloud" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
-              <AnimatedLink href="https://cecloud.com">
+              <AnimatedLink href="https://cecloud.com" className="font-medium">
                 CEcloud
               </AnimatedLink>
             </span>
           </SubItem>
           <SubItem>
-            Full Stack Development Intern{" "}
-            <span className="inline-flex items-baseline gap-1">
+            Full Stack Development Intern
+            <span className="inline-flex items-baseline gap-1 ml-2">
               <Image src={TsinghuaLogo} alt="Tsinghua" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
-              <AnimatedLink href="https://www.tsinghua.edu.cn/en/">
+              <AnimatedLink href="https://www.tsinghua.edu.cn/en/" className="font-medium">
                 Tsinghua University
               </AnimatedLink>
             </span>
@@ -80,31 +80,31 @@ export default function Home() {
         </BulletItem>
         <ul className="grid gap-1 pl-4">
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/linkmark">
+            <AnimatedLink href="https://github.com/alexli8408/linkmark" className="font-medium">
               Linkmark
             </AnimatedLink>{" "}
             &mdash; Full Stack Cloud Bookmark Manager
           </SubItem>
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/palette-ai">
+            <AnimatedLink href="https://github.com/alexli8408/palette-ai" className="font-medium">
               PaletteAI
             </AnimatedLink>{" "}
             &mdash; Full Stack AI Palette Generator
           </SubItem>
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/co-whiteboard">
+            <AnimatedLink href="https://github.com/alexli8408/co-whiteboard" className="font-medium">
               CoWhiteboard
             </AnimatedLink>{" "}
             &mdash; Real-Time Collaborative Whiteboard
           </SubItem>
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/truelight">
+            <AnimatedLink href="https://github.com/alexli8408/truelight" className="font-medium">
               TrueLight
             </AnimatedLink>{" "}
             &mdash; React Native Dashcam App
           </SubItem>
           <SubItem>
-            <AnimatedLink href="https://github.com/alexli8408/data-structures-library">
+            <AnimatedLink href="https://github.com/alexli8408/data-structures-library" className="font-medium">
               Data Structures Library
             </AnimatedLink>{" "}
             &mdash; C++ Data Structures Library
@@ -114,4 +114,3 @@ export default function Home() {
     </div>
   );
 }
-

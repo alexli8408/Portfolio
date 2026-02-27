@@ -18,7 +18,7 @@ export default function AnimatedLink({
   const isExternal = external ?? href.startsWith("http");
 
   const linkClasses = `
-    animated-link relative inline-flex items-center font-medium
+    animated-link relative inline-flex items-center
     text-stone-700 dark:text-stone-300
     transition-all duration-300 outline-none
     after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full
