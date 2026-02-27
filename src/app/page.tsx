@@ -21,7 +21,7 @@ export default function Home() {
         <ul className="grid gap-1 pl-4">
           <SubItem>
             Computer Engineering
-            <span className="inline-flex items-baseline gap-1 ml-2">
+            <span className="inline-flex items-baseline gap-1">
               <Image src={UWaterlooLogo} alt="UWaterloo" width={14} height={14} className="object-contain relative top-[2px]" />
               <AnimatedLink href="https://uwaterloo.ca" className="font-medium">
                 University of Waterloo
@@ -43,7 +43,7 @@ export default function Home() {
             <AnimatedLink href="https://github.com/alexli8408/UW-Orbital" className="font-medium">
               Software Developer
             </AnimatedLink>
-            <span className="inline-flex items-baseline gap-1 ml-2">
+            <span className="inline-flex items-baseline gap-1">
               <Image src={UWOrbitalLogo} alt="UW Orbital" width={14} height={14} className="object-contain relative top-[2px]" />
               <AnimatedLink href="https://www.uworbital.com" className="font-medium">
                 UW Orbital
@@ -52,7 +52,7 @@ export default function Home() {
           </SubItem>
           <SubItem>
             Computer Architecture Research Intern
-            <span className="inline-flex items-baseline gap-1 ml-2">
+            <span className="inline-flex items-baseline gap-1">
               <Image src={CEcloudLogo} alt="CEcloud" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
               <AnimatedLink href="https://cecloud.com" className="font-medium">
                 CEcloud
@@ -61,7 +61,7 @@ export default function Home() {
           </SubItem>
           <SubItem>
             Full Stack Development Intern
-            <span className="inline-flex items-baseline gap-1 ml-2">
+            <span className="inline-flex items-baseline gap-1">
               <Image src={TsinghuaLogo} alt="Tsinghua" width={14} height={14} className="object-contain relative top-[2px] bg-white rounded-full" />
               <AnimatedLink href="https://www.tsinghua.edu.cn/en/" className="font-medium">
                 Tsinghua University
