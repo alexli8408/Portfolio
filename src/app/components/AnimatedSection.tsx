@@ -40,7 +40,7 @@ export default function AnimatedSection({
         <ul
             ref={ref}
             id={id}
-            className={`group grid gap-1 hover:translate-x-1 transition-transform duration-200 outline-none ${active ? "translate-x-1 touched" : ""
+            className={`group grid gap-3 hover:translate-x-1 transition-transform duration-200 outline-none ${active ? "translate-x-1 touched" : ""
                 } ${className}`}
         >
             {children}
