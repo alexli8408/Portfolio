@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-1 text-base">
       {/* Education */}
-      <ul className="group grid gap-1 hover:translate-x-1 active:translate-x-1 transition-transform duration-200">
+      <ul className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Education
@@ -31,7 +31,7 @@ export default function Home() {
       </ul>
 
       {/* Experiences */}
-      <ul className="group grid gap-1 hover:translate-x-1 active:translate-x-1 transition-transform duration-200">
+      <ul className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Experiences
@@ -71,7 +71,7 @@ export default function Home() {
       </ul>
 
       {/* Projects Section */}
-      <ul id="projects" className="group grid gap-1 hover:translate-x-1 active:translate-x-1 transition-transform duration-200">
+      <ul id="projects" className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Projects

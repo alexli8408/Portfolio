@@ -79,7 +79,7 @@ body {
 
 /* Sweep underline animation for links */
 .animated-link:hover::before,
-.animated-link:active::before {
+.animated-link:focus::before {
   animation: sweep 2s ease-in-out infinite;
 }
 
@@ -88,14 +88,17 @@ body {
     transform: scaleX(0);
     transform-origin: left;
   }
+
   50% {
     transform: scaleX(1);
     transform-origin: left;
   }
+
   50.1% {
     transform: scaleX(1);
     transform-origin: right;
   }
+
   100% {
     transform: scaleX(0);
     transform-origin: right;
@@ -139,6 +142,7 @@ body {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
