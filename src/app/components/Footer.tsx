@@ -34,11 +34,11 @@ export default function Footer() {
           <a
             key={label}
             href={href}
-            className="group flex items-center hover:text-neutral-800 dark:hover:text-neutral-200"
+            className="group flex items-center hover:text-neutral-800 dark:hover:text-neutral-200 active:text-neutral-800 dark:active:text-neutral-200"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon className="w-5 h-5 hover:scale-110 md:hover:scale-110 transition-transform duration-500 ease-out" />
+            <Icon className="w-5 h-5 hover:scale-110 active:scale-110 transition-transform duration-500 ease-out" />
             <span className="hidden md:inline-block md:w-0 md:overflow-hidden md:group-hover:w-auto md:group-hover:ml-2 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 ease-out">
               {label}
             </span>
