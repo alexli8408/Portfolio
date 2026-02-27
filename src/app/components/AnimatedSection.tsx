@@ -24,23 +24,16 @@ export default function AnimatedSection({
         const hasHover = window.matchMedia("(hover: hover)").matches;
         if (hasHover) return;
 
-        const handleTouchInside = (e: TouchEvent) => {
-            // Prevent the outside handler from immediately deactivating
-            e.stopPropagation();
-            setActive(true);
+        const handleTouch = (e: TouchEvent) => {
+            if (el.contains(e.target as Node)) {
+                setActive(true);
+            } else {
+                setActive(false);
+            }
         };
 
-        const handleTouchOutside = () => {
-            setActive(false);
-        };
-
-        el.addEventListener("touchstart", handleTouchInside);
-        document.addEventListener("touchstart", handleTouchOutside);
-
-        return () => {
-            el.removeEventListener("touchstart", handleTouchInside);
-            document.removeEventListener("touchstart", handleTouchOutside);
-        };
+        document.addEventListener("touchstart", handleTouch);
+        return () => document.removeEventListener("touchstart", handleTouch);
     }, []);
 
     return (
