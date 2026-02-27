@@ -14,32 +14,40 @@ export default function AnimatedSection({
     id,
 }: AnimatedSectionProps) {
     const ref = useRef<HTMLUListElement>(null);
-    const [inView, setInView] = useState(false);
+    const [active, setActive] = useState(false);
 
     useEffect(() => {
         const el = ref.current;
         if (!el) return;
 
-        // Only use Intersection Observer on touch-only devices
+        // On touch devices, tap to activate section, tap elsewhere to deactivate
         const hasHover = window.matchMedia("(hover: hover)").matches;
         if (hasHover) return;
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setInView(entry.isIntersecting);
-            },
-            { threshold: 0.5 }
-        );
+        const handleTouchInside = (e: TouchEvent) => {
+            // Prevent the outside handler from immediately deactivating
+            e.stopPropagation();
+            setActive(true);
+        };
 
-        observer.observe(el);
-        return () => observer.disconnect();
+        const handleTouchOutside = () => {
+            setActive(false);
+        };
+
+        el.addEventListener("touchstart", handleTouchInside);
+        document.addEventListener("touchstart", handleTouchOutside);
+
+        return () => {
+            el.removeEventListener("touchstart", handleTouchInside);
+            document.removeEventListener("touchstart", handleTouchOutside);
+        };
     }, []);
 
     return (
         <ul
             ref={ref}
             id={id}
-            className={`group grid gap-1 hover:translate-x-1 transition-transform duration-200 outline-none ${inView ? "translate-x-1 in-view" : ""
+            className={`group grid gap-1 hover:translate-x-1 transition-transform duration-200 outline-none ${active ? "translate-x-1 touched" : ""
                 } ${className}`}
         >
             {children}
