@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${caveat.variable} font-sans antialiased`}
+        className={`${geistSans.className} ${geistSans.variable} ${caveat.variable} antialiased`}
       >
         <ThemeProvider>
           <main className="flex justify-center min-h-screen bg-stone-100 dark:bg-black selection:bg-yellow-200 dark:selection:bg-yellow-800 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px]">
