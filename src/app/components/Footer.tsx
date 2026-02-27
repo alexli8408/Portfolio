@@ -1,5 +1,3 @@
-"use client";
-
 import { Linkedin, Github, Mail, FileText } from "lucide-react";
 
 const links = [

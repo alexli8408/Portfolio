@@ -6,14 +6,13 @@ This is the personal portfolio of **Alex Li**, a Computer Engineering student at
 You can view the live site at [axli.me](https://axli.me).
 
 ## Background
-- **Education**: Computer Engineering @ University of Waterloo (Class of 2029)
+- **Education**: Computer Engineering @ University of Waterloo (Class of 2030)
 - **Interests**: Software development at the intersection of systems and web technologies.
 
 ## Built With
 - [Next.js](https://nextjs.org/) (App Router)
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
 
 ## Getting Started
 
