@@ -2,6 +2,7 @@ import Image from "next/image";
 import BulletItem from "./components/BulletItem";
 import SubItem from "./components/SubItem";
 import AnimatedLink from "./components/AnimatedLink";
+import AnimatedSection from "./components/AnimatedSection";
 import UWaterlooLogo from "./components/icon/UWaterloo.png";
 import UWOrbitalLogo from "./components/icon/UWOrbital.png";
 import CEcloudLogo from "./components/icon/CEcloud.png";
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-1 text-base">
       {/* Education */}
-      <ul className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
+      <AnimatedSection>
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Education
@@ -28,10 +29,10 @@ export default function Home() {
             </span>
           </SubItem>
         </ul>
-      </ul>
+      </AnimatedSection>
 
       {/* Experiences */}
-      <ul className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
+      <AnimatedSection>
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Experiences
@@ -68,10 +69,10 @@ export default function Home() {
             </span>
           </SubItem>
         </ul>
-      </ul>
+      </AnimatedSection>
 
       {/* Projects Section */}
-      <ul id="projects" className="group grid gap-1 hover:translate-x-1 focus-within:translate-x-1 transition-transform duration-200 outline-none" tabIndex={0}>
+      <AnimatedSection id="projects">
         <BulletItem>
           <em className="font-medium text-stone-500 dark:text-stone-400">
             Projects
@@ -109,7 +110,8 @@ export default function Home() {
             &mdash; C++ Data Structures Library
           </SubItem>
         </ul>
-      </ul>
+      </AnimatedSection>
     </div>
   );
 }
+

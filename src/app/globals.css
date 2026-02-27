@@ -79,7 +79,7 @@ body {
 
 /* Sweep underline animation for links */
 .animated-link:hover::before,
-.animated-link:focus::before {
+.animated-link:active::before {
   animation: sweep 2s ease-in-out infinite;
 }
 
