@@ -25,7 +25,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-4 text-sm text-stone-500 dark:text-stone-400">
+    <footer className="flex flex-col gap-4 text-base text-stone-500 dark:text-stone-400">
       <hr className="border-b border-neutral-200 dark:border-neutral-800" />
       <div className="flex flex-wrap gap-4">
         {links.map(({ icon: Icon, href, label }) => (
