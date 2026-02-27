@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="flex items-center justify-between">
       <h1 className="text-neutral-700 dark:text-neutral-300 font-semibold">
-        <AnimatedLink href="/">
+        <AnimatedLink href="/" className="font-semibold">
           Alex Li
         </AnimatedLink>
       </h1>
