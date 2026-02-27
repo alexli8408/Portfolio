@@ -28,14 +28,7 @@ body {
   color: var(--foreground);
 }
 
-/* Selection highlight */
-::selection {
-  background-color: #fef08a;
-}
 
-.dark ::selection {
-  background-color: #854d0e;
-}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

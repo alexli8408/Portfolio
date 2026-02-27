@@ -50,8 +50,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${caveat.variable} font-sans antialiased`}
       >
         <ThemeProvider>
-          <main className="flex justify-center min-h-screen bg-stone-100 dark:bg-black bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px]">
-            <div className="flex flex-col gap-4 w-full md:max-w-[500px] mx-6 md:mx-20 mt-8 md:mt-[60px] mb-8 text-neutral-500 dark:text-neutral-400 font-extralight">
+          <main className="flex justify-center min-h-screen bg-stone-100 dark:bg-black selection:bg-yellow-200 dark:selection:bg-yellow-800 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px]">
+            <div className="flex flex-col gap-4 w-full md:max-w-[500px] m-6 md:m-20 md:mt-[60px] text-neutral-500 dark:text-neutral-400 font-extralight">
               <Header />
               {children}
               <Footer />
