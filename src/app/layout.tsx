@@ -19,12 +19,11 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "Alex Li",
-  description:
-    "Computer Engineering student at the University of Waterloo. Building software at the intersection of systems and web.",
+  description: "Computer Engineering @ University of Waterloo",
   metadataBase: new URL("https://axli.me"),
   openGraph: {
     title: "Alex Li",
-    description: "Computer Engineering @ UWaterloo",
+    description: "Computer Engineering @ University of Waterloo",
     url: "https://axli.me",
     siteName: "Alex Li",
     type: "website",
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Alex Li",
-    description: "Computer Engineering @ UWaterloo",
+    description: "Computer Engineering @ University of Waterloo",
     images: ["/og-image.svg"],
   },
   icons: {
