@@ -28,11 +28,20 @@ export const metadata: Metadata = {
     url: "https://axli.me",
     siteName: "Alex Li",
     type: "website",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Alex Li",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alex Li",
     description: "Computer Engineering @ UWaterloo",
+    images: ["/og-image.svg"],
   },
   icons: {
     icon: "/favicon.svg",
