@@ -6,7 +6,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 :root {
@@ -93,37 +92,6 @@ body {
   100% {
     transform: scaleX(0);
     transform-origin: right;
-  }
-}
-
-/* Signature drawing animation */
-.sig-text {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  animation: sig-draw 2.5s ease-in-out forwards;
-}
-
-.sig-line {
-  opacity: 0.2;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 250;
-  animation: sig-draw 1.5s ease-in-out 2.5s forwards;
-}
-
-.sig-replay {
-  opacity: 0;
-  animation: sig-fade 1s ease forwards 3.5s;
-}
-
-@keyframes sig-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes sig-fade {
-  to {
-    opacity: 1;
   }
 }
 
